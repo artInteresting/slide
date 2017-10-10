@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>slider</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        .btn1{
+            position: absolute;
+            top: 300px;
+            cursor: pointer;
+            border: none;
+            font-size: 24px;
+        }
+        .btn2{
+            position: absolute;
+            top: 300px;
+            right: 0;
+            cursor: pointer;
+            border: none;
+            font-size: 24px;
+        }
+        .btn1:hover, .btn2:hover{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="content">
+      <img class="mySlides" id="slide1" src="https://assets.mbusa.com/vcm/MB/DigitalAssets/CurrentOffers/Responsive/2017/2017-SPECIAL-OFFERS-15-GLA250-4M-1004-D.jpg" style="width:100%; max-height: 600px; max-width">
+      <img class="mySlides" id="slide2" src="https://www.mercedes-benz.ru/content/media_library/hq/hq_mpc_reference_site/passenger_cars_ng/model_navigation_library/e-class-coupe_c238_705x325_ReNaTe_jpg.object-Single-MEDIA.tmp/e-class-coupe_c238_705x325_ReNaTe.jpg" style="width:100%; max-height: 600px; max-width">
+      <img class="mySlides" id="slide3" src="https://www.mercedes-benz.ru/content/media_library/hq/hq_mpc_reference_site/passenger_cars_ng/model_navigation_library/b-class_w246_705x325_ReNaTe_jpg.object-Single-MEDIA.tmp/b-class_w246_705x325_ReNaTe.jpg" style="width:100%; max-height: 600px; max-width">
+      <img class="mySlides" id="slide4" src="https://icdn-4.motor1.com/images/mgl/LwKlN/s4/mercedes-gle-coupe-orangeart-edition.jpg" style="width:100%; max-height: 600px; max-width">
+      <img class="mySlides" id="slide5" src="https://services.edmunds-media.com/image-service/media-ed/sharp/?quality=70&format=jpg:progressive&image=%2Fmercedes-benz%2Fcla-class%2F2017%2Fevox%2F2017_mercedes-benz_cla-class_sedan_cla250_tds_evox_1_500.jpg" style="width:100%; max-height: 600px; max-width">
+
+      <button class="btn1" onclick="fun1(-1)">&#10094;</button>
+      <button class="btn2" onclick="fun1(1)">&#10095;</button>
+    </div>
+    
+    
+    <script>
+        var slideIndex = 0;  
+        function fun1(n){
+            var slide = new Array[document.getElementById("slide1"), document.getElementById("slide2"), document.getElementById("slide3"), document.getElementById("slide4"), document.getElementById("slide5")];
+            for (var i = 0; i < slide.length; i++) {
+                slide[i].style.display = "none";  
+            }
+                    
+        }
+    </script>
+</body> 
+</html>
